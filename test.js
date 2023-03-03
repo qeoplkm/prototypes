@@ -1,22 +1,22 @@
 <script>
 	var leaderboard = document.getElementById("leaderboard");
 
-	function addRow(rank, name, score) {
+	function addRow(rank, model, data) {
 		var row = document.createElement("tr");
 		var rankCell = document.createElement("td");
-		var nameCell = document.createElement("td");
-		var scoreCell = document.createElement("td");
+		var modelCell = document.createElement("td");
+		var dataCell = document.createElement("td");
 
 		rankCell.textContent = rank;
-		nameCell.textContent = name;
-		scoreCell.textContent = score;
+		modelCell.textContent = model;
+		dataCell.textContent = data;
 
 		row.appendChild(rankCell);
-		row.appendChild(nameCell);
-		row.appendChild(scoreCell);
+		row.appendChild(modelCell);
+		row.appendChild(dataCell);
 
 		leaderboard.appendChild(row);
 	}
 	
-	addRow(4, "Alice", 70);
+	addRow(4, "name of data4", 35);
 </script>
