@@ -1,2 +1,2 @@
 # prototypes
-![pic.png]
+[example](pic.png)
